@@ -1,17 +1,20 @@
 {
-    "id": "d93e67f8-e5e1-401e-9b82-f9d5bab21488",
-    "name": "zenCustom",
-    "description": "Test.",
-    "homepage": "https://github.com/CosmoCreeper/",
-    "style": "https://raw.githubusercontent.com/CosmoCreeper/",
-    "readme": "https://raw.githubusercontent.com/CosmoCreeper/",
-    "image": "https://raw.githubusercontent.com/CosmoCreeper/",
+    "id": "zenCustom",
+    "homepage": "https://github.com/PeacedoseDev/zenCustom",
     "author": "Peacedose",
+    "name": "zenCustomP",
+    "description": "Test",
     "version": "0.0.1",
-    "preferences": "https://raw.githubusercontent.com/CosmoCreeper/",
-    "tags": [
-        "mods"
-    ],
     "createdAt": "2025-06-20",
-    "updatedAt": "2025-06-20"
+    "updatedAt": "2025-06-20",
+    "style": {
+        "chrome": "https://raw.githubusercontent.com/PeacedoseDev/zenCustom/main/userChrome.css",
+        "content": "https://raw.githubusercontent.com/PeacedoseDev/zenCustom/main/userContent.css"
+    },
+    "readme": "https://raw.githubusercontent.com/PeacedoseDev/zenCustom/main/README.md",
+    "tags": [
+        "content",
+        "chrome",
+        "minimal"
+    ]
 }
