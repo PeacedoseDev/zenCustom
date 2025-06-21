@@ -1,0 +1,59 @@
+:root {
+	--fontsize-devtools: 14px;						/* Default 11px */
+	--fontfamily-devtools: Roboto Flex;				/* Default Segoi UI */
+
+	--fontsize-mono-devtools: 13px;					/* Default 11px */
+	--fontfamily-mono-devtools: JetBrains Mono;		/* Default consolas */
+}
+
+/* --------------------------------------- */
+/* Change font for any "about:" page 	   */
+/* --------------------------------------- */
+@-moz-document url-prefix("about:") {
+
+	* {
+		font-family: Roboto Flex, sans serif, arial !important;
+	}
+}
+
+/* --------------------------------------- */
+/* Change font for DevTools 			   */
+/* --------------------------------------- */
+@-moz-document url-prefix('chrome://devtools/content/') {
+
+	:root {
+		/* Normal text */
+	    --theme-body-font-size: var(--fontsize-devtools) !important;
+
+	    /* Code */
+	    --theme-code-font-size: var(--fontsize-mono-devtools) !important;
+    	--monospace-font-family: var(--fontfamily-mono-devtools) !important;
+	}
+
+	nav.tabs-navigation,
+	#toolbox-menu * 
+	{
+		font-family: Roboto Flex, sans serif, arial !important;
+	}
+
+}
+
+/* --------------------------------------- */
+/* Text selection color 				   */
+/* --------------------------------------- */
+
+@-moz-document url-prefix(http), url-prefix(https) {
+  *::selection,
+  *::-moz-selection {
+    background-color: transparent !important;
+    color: #c73838 !important;
+  }
+
+  html::selection,
+  html::-moz-selection,
+  body::selection,
+  body::-moz-selection {
+    background-color: transparent !important;
+    color: #c73838 !important;
+  }
+} 
